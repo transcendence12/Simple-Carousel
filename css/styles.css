@@ -1,12 +1,21 @@
-
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
 .carousel {
     max-width: 600px;
     position: relative;
-    margin: 0 auto;
+    margin: 20px auto;
+    overflow: hidden;
+    height: auto;
 }
 
-.carousel .carousel-item {
-    visibility: hidden;
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
     
 }
 
@@ -19,15 +28,12 @@
     max-width: 600px;
     width: 100%;
     height: auto;
-    
-    overflow: hidden;
-    object-fit: cover;
 }
 
 .carousel .carousel-actions {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
 
     display: flex;
     justify-content: space-between;
@@ -37,11 +43,17 @@
 .carousel .carousel-actions button {
     font-size: 16px;
     font-weight: bold;
-    background-color: white;
+    background-color: whitesmoke;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     cursor: pointer;
     padding: 20px;
+}
+
+.carousel .carousel-actions button:hover,
+.carousel .carousel-actions button:focus {
+    background-color: darkred;
+    color: whitesmoke;
 }
 
 .carousel .carousel-actions button#carousel-button-prev {
