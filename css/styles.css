@@ -55,7 +55,7 @@ body {
 
 .carousel .carousel-actions button:hover,
 .carousel .carousel-actions button:focus {
-    background-color: darkred;
+    background-color: #b4004e;
     color: whitesmoke;
 }
 
